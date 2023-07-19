@@ -124,12 +124,87 @@ body {
 .banner1-img img {
   width: 80%;
 }
+/* Banner section ends  */
+
+/* Cards section start  */
+.online-game {
+  margin-top: 120px;
+}
+
+.online-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.online-text {
+  color: #534c64;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.card {
+  /* position: relative; */
+}
+.card-img {
+  width: 342px;
+  height: 400px;
+  transition: opacity 0.3s ease;
+
+}
+.card-text {
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+.img-hover{
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.hover {
+  position: absolute;
+  top: 40%;
+  left: 30%;  
+}
+.icon-hover {
+  opacity: 0;
+  text-align: center;
+}
+
+.text-hover {
+  opacity: 0;
+  color: #ff42a5;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.img-hover:hover  .icon-hover {
+  opacity: 1;
+
+}
+.img-hover:hover .text-hover{
+  opacity: 1;
+}
+.img-hover:hover .hover{
+  opacity: 1;
+}
+
 
 /* Responsive Section  */
 
 /* For Mobile  */
 @media screen and (max-width: 576px) {
-  .nav-container {
+  .nav-container, .card-container {
     flex-direction: column;
   }
   .nav-logo-container {
@@ -156,7 +231,7 @@ body {
 
 /* For Tablet  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .nav-container {
+  .nav-container{
     flex-direction: column;
   }
 
@@ -178,5 +253,12 @@ body {
   }
   .banner1-img img {
     width: 100%;
+  }
+  .online-title, .online-text{
+    width: 100%;
+    text-align: center;
+  }
+  .card-container {
+    flex-wrap: wrap;
   }
 }
