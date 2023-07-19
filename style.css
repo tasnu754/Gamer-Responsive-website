@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;800&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Shared Section  */
+.primary-color {
+  color: #f948b2;
+}
+
+/* Nav section  */
+.nav-container {
+
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.nav-logo-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  width: 80px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.logo-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.nav-navigation-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-navigation-container a {
+  text-decoration: none;
+  color: #3c354f;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.yt-icons {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 17px 20px;
+}
+.fa-brands {
+  margin-left: 12px;
+}
+
+/* Nav section Ends  */
+
+
+
+/* Responsive Section  */
+
+/* For Mobile  */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-logo-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-navigation-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* For Tablet  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+   .nav-logo-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-navigation-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+    
+}
