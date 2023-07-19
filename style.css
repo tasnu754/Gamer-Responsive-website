@@ -271,10 +271,10 @@ body {
 
 }
 .games {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border: 2px solid #FFF;
   border-radius: 50px;
   background: #fff;
 }
@@ -321,6 +321,16 @@ body {
   height: 80px;
 }
 
+.games:hover h2{
+  color: #FF42A5 ;
+ 
+  
+
+}
+.games:hover{
+  border: 2px solid #FF42A5;
+}
+
 /* Games section ends */
 
 /* Responsive Section  */
@@ -339,7 +349,7 @@ body {
     width: 80px;
   }
   .game-origin {
-    
+
   }
  
   .nav-logo-container {
