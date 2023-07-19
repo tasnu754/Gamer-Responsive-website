@@ -9,7 +9,9 @@ body {
 }
 
 /* Shared Section  */
-
+.prim-color {
+  color: #f948b2;
+}
 .primary-color {
   background-image: linear-gradient(to bottom, #f948b2, #8758f1);
   color: transparent;
@@ -268,13 +270,12 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
-
 }
 .games {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-radius: 50px;
   background: #fff;
 }
@@ -321,14 +322,11 @@ body {
   height: 80px;
 }
 
-.games:hover h2{
-  color: #FF42A5 ;
- 
-  
-
+.games:hover h2 {
+  color: #ff42a5;
 }
-.games:hover{
-  border: 2px solid #FF42A5;
+.games:hover {
+  border: 2px solid #ff42a5;
 }
 
 /* Games section ends */
@@ -345,13 +343,12 @@ body {
   .game-origin {
     grid-template-columns: repeat(3, 1fr);
   }
-  .games{
+  .games {
     width: 80px;
   }
   .game-origin {
-
   }
- 
+
   .nav-logo-container {
     width: 100%;
     justify-content: center;
@@ -394,6 +391,85 @@ body {
   .play-img2 {
     width: 80%;
   }
+}
+
+/* Footer  */
+.footer {
+  background: #0b0223;
+}
+.foot {
+  width: 60%;
+  margin: 0 auto;
+}
+.foot-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+.foot-logo {
+  width: 86.041px;
+  height: 40px;
+}
+.foot-title {
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.foot-content {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.foot-icons {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 3fr);
+  gap: 30px;
+  margin-top: 70px;
+  margin-left: 120px;
+}
+.foot-icons img {
+  width: 40px;
+  height: 40px;
+}
+.policy {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 50px;
+  margin-top: 70px;
+}
+.foot-last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 /* For Tablet  */
@@ -449,5 +525,8 @@ body {
     top: 300px;
     width: 250px;
     height: 300px;
+  }
+  .foot-content{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
