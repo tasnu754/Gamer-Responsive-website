@@ -158,7 +158,6 @@ body {
   width: 342px;
   height: 400px;
   transition: opacity 0.3s ease;
-
 }
 .card-text {
   color: #534c64;
@@ -166,7 +165,7 @@ body {
   font-weight: 500;
   line-height: 30px;
 }
-.img-hover{
+.img-hover {
   position: relative;
   transition: opacity 0.3s ease;
 }
@@ -174,7 +173,7 @@ body {
 .hover {
   position: absolute;
   top: 40%;
-  left: 30%;  
+  left: 30%;
 }
 .icon-hover {
   opacity: 0;
@@ -188,23 +187,71 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
 }
-.img-hover:hover  .icon-hover {
+.img-hover:hover .icon-hover {
   opacity: 1;
+}
+.img-hover:hover .text-hover {
+  opacity: 1;
+}
+.img-hover:hover .hover {
+  opacity: 1;
+}
 
+/* Play instantly section start  */
+.play-instantly {
+  display: flex;
 }
-.img-hover:hover .text-hover{
-  opacity: 1;
+.play-right {
+  width: 50%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
-.img-hover:hover .hover{
-  opacity: 1;
+.play-haed {
+  text-align: right;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
 }
-
+.play-head-color {
+  color: #ff42a5;
+}
+.play-text {
+  color: #534c64;
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.play-content{
+  margin-left: 350px;
+ 
+}
+.play-img {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.play-img1 {
+  width: 318.5px;
+  height: 365.083px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.play-img2 {
+  width: 634.833px;
+  height: 650px;
+}
 
 /* Responsive Section  */
 
 /* For Mobile  */
 @media screen and (max-width: 576px) {
-  .nav-container, .card-container {
+  .nav-container,
+  .card-container {
     flex-direction: column;
   }
   .nav-logo-container {
@@ -231,7 +278,7 @@ body {
 
 /* For Tablet  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .nav-container{
+  .nav-container {
     flex-direction: column;
   }
 
@@ -254,7 +301,8 @@ body {
   .banner1-img img {
     width: 100%;
   }
-  .online-title, .online-text{
+  .online-title,
+  .online-text {
     width: 100%;
     text-align: center;
   }
