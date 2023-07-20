@@ -37,7 +37,7 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.2rem;
 }
 .logo-img {
   width: 80px;
@@ -75,26 +75,31 @@ body {
 .fa-youtube {
   color: red;
 }
-.fa-tiktok{
+.fa-tiktok {
   color: black;
 }
-
 /* Nav section Ends  */
 
 /* Banner1 section starts */
 .banner1-container {
+  /* border: 1px solid red; */
   display: flex;
-  gap: 60px;
+  gap: 3.7rem;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .banner1-text {
-  width: 50%;
+  /* border: 1px solid blue; */
+  width: 60%;
   background-image: url("images/Group\ 14.png");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.banner1-text-content {
+  /* border: 1px solid brown; */
 }
 .banner1-text-content .play {
   color: #0b0223;
@@ -128,6 +133,7 @@ body {
 }
 
 .banner1-img {
+  /* border: 1px solid green; */
   width: 50%;
 }
 .banner1-img img {
@@ -158,7 +164,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 .card {
   /* position: relative; */
@@ -208,9 +214,12 @@ body {
 
 /* Play instantly section start  */
 .play-instantly {
+  /* border: 1px solid red; */
   display: flex;
+  padding-bottom: 100px;
 }
 .play-right {
+  /* border: 1px solid blue; */
   width: 50%;
   display: flex;
   justify-content: center;
@@ -233,9 +242,11 @@ body {
   line-height: 30px; /* 166.667% */
 }
 .play-content {
+  /* border: 1px solid yellow; */
   margin-left: 350px;
 }
 .play-img {
+  /* border: 1px solid green; */
   position: relative;
   width: 50%;
   display: flex;
@@ -246,87 +257,55 @@ body {
   height: 365.083px;
   border-radius: 8px;
   position: absolute;
-  bottom: 0;
+  bottom: -50px;
   left: 0;
 }
 .play-img2 {
-  /* width: 634.833px;
-  height: 650px; */
   width: 80%;
 }
 
 /* Games section start */
 .games-section {
+  /* border: 1px solid red; */
   background-color: rgba(255, 66, 165, 0.03);
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 .game-origin {
-  /* padding: 120px 100px; */
-  /* padding-bottom: 120px; */
-  /* display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  gap: 40px; */
-  width: 90%;
+  /* border: 1px solid green; */
+  max-width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 .games {
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   border: 2px solid #fff;
   border-radius: 50px;
   background: #fff;
+  padding: 10px 20px 10px 10px;
+}
+.game-img {
+  width: 60px;
+  height: 60px;
 }
 
 .games h2 {
+  /* border: 1px solid yellow; */
   color: #0b0223;
   font-size: 1.2rem;
   font-weight: 600;
-}
-.game1 {
-  width: 243px;
-  height: 80px;
-}
-.game2 {
-  width: 281px;
-  height: 80px;
-}
-.game3 {
-  width: 248px;
-  height: 80px;
-}
-.game4 {
-  width: 295px;
-  height: 80px;
-}
-.game5 {
-  width: 231px;
-  height: 80px;
-}
-.game6 {
-  width: 299px;
-  height: 80px;
-}
-.game7 {
-  width: 317px;
-  height: 80px;
-}
-.game8 {
-  width: 244px;
-  height: 80px;
-}
-.game9 {
-  width: 262px;
-  height: 80px;
 }
 
 .games:hover h2 {
@@ -341,7 +320,8 @@ body {
 /* Footer  */
 .footer {
   background: #0b0223;
-  padding-bottom: 30px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .foot {
   width: 60%;
@@ -352,7 +332,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-bottom: 70px;
 }
 .foot-logo {
   width: 86.041px;
@@ -366,11 +345,11 @@ body {
   line-height: normal;
 }
 .foot-content {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: repeat(6, 2fr);
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
   color: #fff;
   text-align: center;
   font-size: 1.1rem;
@@ -378,32 +357,29 @@ body {
   line-height: normal;
 }
 .foot-icons {
-  /* display: flex; */
+  /* border: 1px solid yellow; */
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(5, 3fr);
-  gap: 30px;
-  margin-top: 70px;
-  margin-left: 120px;
+  gap: 40px;
+  margin-top: 35px;
 }
 .foot-icons img {
   width: 40px;
   height: 40px;
 }
+
 .policy {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
   line-height: normal;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  gap: 50px;
-  margin-top: 70px;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
 }
 .foot-last {
   display: flex;
@@ -414,8 +390,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: normal;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 /* Responsive Section  */
@@ -444,9 +419,16 @@ body {
   .banner1-text,
   .banner1-img {
     width: 100%;
+    padding: 20px;
   }
   .banner1-img img {
     width: 100%;
+  }
+  .card-text {
+    text-align: center;
+  }
+  .play-instantly {
+    padding-bottom: 0px;
   }
   .play-right {
     width: 100%;
@@ -461,31 +443,71 @@ body {
   }
   .play-img {
     width: 100%;
+    padding: 20px;
+    margin-bottom: 80px;
   }
   .play-img1 {
-    top: 220px;
-    width: 150px;
-    height: 170px;
+    left: 0;
+    bottom: -20px;
+    width: 170px;
+    height: 200px;
   }
   .play-img2 {
     width: 80%;
   }
+  .games {
+    padding: 10px;
+    gap: 5px;
+  }
   .games-origin {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .games {
-    width: 80px;
+  .game-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .games h2 {
+    color: #0b0223;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .footer {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .foot,
+  .foot-content {
+    width: 100%;
   }
   .foot-content {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 5px;
+    font-size: 0.8rem;
   }
   .foot-icons {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 20px;
+    gap: 30px;
+    margin-left: 30px;
+  }
+  .foot-icons img {
+    width: 30px;
+    height: 30px;
   }
   .policy {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 0.8rem;
+    gap: 10px;    
+  }
+  .foot-last{
+    display: block;
+    margin-top: 60px;
+    font-size: 0.8rem;
+
   }
 }
 
@@ -495,7 +517,7 @@ body {
   .play-instantly {
     flex-direction: column;
   }
-  .nav-container{
+  .nav-container {
     width: 100%;
   }
   .nav-logo-container {
@@ -513,6 +535,9 @@ body {
   .banner1-text,
   .banner1-img {
     width: 100%;
+    padding: 20px;
+  }
+  .banner1-text {
   }
   .banner1-img img {
     width: 100%;
@@ -525,8 +550,8 @@ body {
   .card-container {
     flex-wrap: wrap;
   }
-  .games {
-    grid-template-columns: repeat(3, 1fr);
+  .play-instantly {
+    padding-bottom: 0px;
   }
   .play-right {
     width: 100%;
@@ -541,21 +566,59 @@ body {
   }
   .play-img {
     width: 100%;
+    margin-bottom: 100px;
   }
   .play-img1 {
-    top: 300px;
+    /* top: 350px; */
+    left: 0;
+    bottom: -60px;
     width: 250px;
     height: 300px;
   }
+
+  .games {
+    padding: 15px;
+    gap: 5px;
+  }
+  .games-origin {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .game-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .games h2 {
+    color: #0b0223;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .foot{
+    width: 100%;
+  }
   .foot-content {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-size: 1.2rem;
   }
   .foot-icons {
-    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     margin-left: 20px;
   }
+ 
   .policy {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    font-size: 1rem;
+    gap: 5px;    
+  }
+  .foot-last{
+    margin-top: 40px;
+    font-size: 1rem;
+
   }
 }
