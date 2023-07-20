@@ -37,12 +37,13 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .logo-img {
   width: 80px;
   height: 40px;
   object-fit: cover;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 .logo-title {
   text-align: center;
@@ -70,6 +71,12 @@ body {
 }
 .fa-brands {
   margin-left: 12px;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-tiktok{
+  color: black;
 }
 
 /* Nav section Ends  */
@@ -331,9 +338,6 @@ body {
 
 /* Games section ends */
 
-
-
-
 /* Footer  */
 .footer {
   background: #0b0223;
@@ -423,8 +427,6 @@ body {
   .play-instantly {
     flex-direction: column;
   }
-  
-
 
   .nav-logo-container {
     width: 100%;
@@ -468,26 +470,23 @@ body {
   .play-img2 {
     width: 80%;
   }
-  .games-origin{
+  .games-origin {
     grid-template-columns: repeat(3, 1fr);
   }
   .games {
     width: 80px;
   }
-  .foot-content{
+  .foot-content {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
-  .foot-icons{
+  .foot-icons {
     grid-template-columns: repeat(3, 1fr);
     margin-left: 20px;
   }
-  .policy{
+  .policy {
     grid-template-columns: repeat(2, 1fr);
   }
-
-
-
 }
 
 /* For Tablet  */
@@ -496,7 +495,9 @@ body {
   .play-instantly {
     flex-direction: column;
   }
-
+  .nav-container{
+    width: 100%;
+  }
   .nav-logo-container {
     width: 100%;
     justify-content: center;
@@ -524,7 +525,9 @@ body {
   .card-container {
     flex-wrap: wrap;
   }
-
+  .games {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .play-right {
     width: 100%;
   }
@@ -544,15 +547,15 @@ body {
     width: 250px;
     height: 300px;
   }
-  .foot-content{
-    grid-template-columns: repeat(3, 1fr);
+  .foot-content {
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
   }
-  .foot-icons{
+  .foot-icons {
     grid-template-columns: repeat(3, 1fr);
     margin-left: 20px;
   }
-  .policy{
+  .policy {
     grid-template-columns: repeat(2, 1fr);
   }
 }
